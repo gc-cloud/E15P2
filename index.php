@@ -9,10 +9,10 @@
 <body>
 
 <?php
-  echo 'Hello World! <br/>';
-?>
+  echo '<h1> Hello Visitor! </h1>';
+  echo '<h1> This is a place-holder for Project 2 - PHP Basics </h1>';
+  echo '<br/>';
 
-<?php
   echo 'The requesting browser is: ';
   echo $_SERVER['HTTP_USER_AGENT'];
   echo '<br/>';
@@ -38,7 +38,6 @@ echo '<br/>';
   echo 'Document root: ';
   echo  $_SERVER['DOCUMENT_ROOT'].'<br/>';
 ?>
-
 
 </body>
 </html>
