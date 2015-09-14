@@ -5,13 +5,18 @@
   </head>
   <body>
   	<?php include("includes/header.php"); ?>
+    <!-- Test inclusion of functions -->
+    <?php include("includes/functions.php"); ?>
+
+
+
           <div class="container">
           <div class="row mainContent" title="Dynamic Web Apps Portfolio">
               <div class="twelve columns">
                 <main>
                   <hr/>
                   <h2>Generate a hard-to-guess password that you can remember!</h2>
-                  <form class="parameters">
+                  <form class="parameters" action="index.php" method="post">
 
                     <h3> Select Password Generation Parameters</h3>
                     <p class='options'>
@@ -28,13 +33,24 @@
                     <a href='http://xkcd.com/936/'>xkcd archive: password strength</a>
                   </form>
                   <div class="result">
-                    <p>Proposed password</p>
-                    <p class='password'> buy-led-common-camera	</p>
+                    <!-- Execute after posting form-->
+                  <?php  if ($_SERVER['REQUEST_METHOD']=='POST'){
+                      echo '<p>Proposed password</p>';
+                      echo "Global sum result = $result<br/>";
+                      square();
+                      cube();
+                      squareN(3);
+                      cubeN(4);
+                      squareN($number);
+                      cubeN($number);
+                    } ?>
+                    <p class='password'> VeryHard2Find?</p>
                   </div>
                   </main>
               </div> <!--End twelve columns -->
           </div> <!--End mainContent-->
       </div> <!--End container-->
       <?php include("includes/footer.php"); ?>
+
   </body>
 </html>
