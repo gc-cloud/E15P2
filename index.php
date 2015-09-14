@@ -36,15 +36,8 @@
                     <!-- Execute after posting form-->
                   <?php  if ($_SERVER['REQUEST_METHOD']=='POST'){
                       echo '<p>Proposed password</p>';
-                      echo "Global sum result = $result<br/>";
-                      square();
-                      cube();
-                      squareN(3);
-                      cubeN(4);
-                      squareN($number);
-                      cubeN($number);
                     } ?>
-                    <p class='password'> VeryHard2Find?</p>
+                    <p class='password'> <?php echo  squareN($_POST['number_of_words']).cubeN($_POST['number_of_words']); ?></p>
                   </div>
                   </main>
               </div> <!--End twelve columns -->
