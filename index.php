@@ -6,7 +6,7 @@
   <body>
   	<?php include("includes/header.php"); ?>
     <!-- Test inclusion of functions -->
-    <?php include("includes/functions.php"); ?>
+
 
 
 
@@ -56,11 +56,15 @@
                     <a href='http://xkcd.com/936/'>xkcd archive: password strength</a>
                   </form>
                   <div class="result">
-                    <!-- Execute after posting form-->
-                  <?php  if ($_SERVER['REQUEST_METHOD']=='POST'){
-                      echo '<p>Proposed password</p>';
-                    } ?>
-                    <p class='password'> <?php echo  squareN($_POST['number_of_words']).cubeN($_POST['number_of_words']); ?></p>
+                    <h2>Proposed password</h2>
+                    <!-- Execute only after posting form-->
+
+                    <p class='password'>
+                      <?php  if ($_SERVER['REQUEST_METHOD']=='POST')
+                      {
+                      include("includes/functions.php");
+                      } ?>
+                    </p>
                   </div>
                   </main>
               </div> <!--End twelve columns -->

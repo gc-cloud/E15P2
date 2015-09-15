@@ -9,7 +9,7 @@
 
 
   /* Return the lengths of each array and the valid values*/
-  echo "Valid special Characters are " . count($specialCharacters). "<br>";
+/*  echo "Valid special Characters are " . count($specialCharacters). "<br>";
   foreach ($specialCharacters as $key => $value) {
     echo "[".$key."]: ". $value . "<br>" ;
   }
@@ -23,29 +23,24 @@
   foreach ($wordCorpus as $key => $value) {
     echo "[".$key."]: ". $value . "<br>" ;
   }
-
+*/
 
 
 /*  Return arrays of random elements for special characters, numbers and words*/
-  echo "<br >Random special Characters: <br>";
   $randomKeys  = array_rand($specialCharacters,3);
   foreach ($randomKeys as $randomKey) {
-    echo $specialCharacters[$randomKey] .  "<br>" ;
+    echo $specialCharacters[$randomKey] ;
   }
 
-  echo "<br >Random numbers: <br>";
   $randomKeys  = array_rand($numbers,3);
   foreach ($randomKeys as $randomKey) {
-    echo $numbers[$randomKey] .  "<br>" ;
+    echo $numbers[$randomKey] ;
   }
 
-  echo "<br >Random words: <br>";
   $randomKeys  = array_rand($wordCorpus,3);
   foreach ($randomKeys as $randomKey) {
-    echo $wordCorpus[$randomKey] .  "<br>" ;
+    echo $wordCorpus[$randomKey];
   }
-
-
 ?>
 
 
