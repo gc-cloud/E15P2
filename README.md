@@ -1,5 +1,5 @@
 # CSCI-E15: Project 2
-### Portfolio /  PHP Basics
+### PHP Basics
 This project creates a strong password in the xcdk style.  This is, a password that
 is easy for humans but hard for computers.  The basic idea is to select large passwords
 composed of words that humans can memorize (there is a basic security flaw with this
