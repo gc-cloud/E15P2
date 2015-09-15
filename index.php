@@ -29,8 +29,8 @@
                       <label for='numberCount'># of Numbers</label>
                         <select name='numberCount' id='numberCount'>
                             <option value="0">0</option>
-                            <option value="1" selected='selected'>1</option>
-                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="2" selected='selected'>2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
@@ -38,8 +38,8 @@
                         <label for='specialCharacterCount'># of Special Characters</label>
                         <select name='specialCharacterCount' id='specialCharacterCount'>
                             <option value="0">0</option>
-                            <option value="1" selected='selected'>1</option>
-                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="2" selected='selected'>2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>

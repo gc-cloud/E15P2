@@ -30,11 +30,11 @@ a source (specialCharacters,numbers,wordCorpus).  Then, we call the
 function for each case. Using a function is cleaner and consistent with
 DNRY principles*/
 
-function addElements ($source, &$destination, $count){
-    $randomKeys  = array_rand($source,$count);
-    foreach ($randomKeys as $randomKey) {
-      $destination[] = $source[$randomKey];
-    }
+function addElements ($source, &$destination,$count){
+    $randomKeys  = array_rand($source, $count);
+      foreach ($randomKeys as $randomKey) {
+        $destination[] = $source[$randomKey];
+      }
 }
 
 addElements ($specialCharacters, $password,$specialCharacterCount);
