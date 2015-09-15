@@ -15,7 +15,7 @@
                     words, numbers, and punctiation marks.  Choose how many of each you
                   want and the program will generate the password.</p>
                     <form action="index.php" method="post" class="options, parameters">
-                      <h3> Select Password Generation Parameters</h3>
+                      <h3> Select Password Requirements</h3>
                         <label for='wordCount'># of Words</label>
                         <select name='wordCount' id='wordCount'>
                             <option value="1">1</option>
@@ -28,8 +28,8 @@
                         <label for='numberCount'># of Numbers</label>
                           <select name='numberCount' id='numberCount'>
                               <option value="0">0</option>
-                              <option value="1">1</option>
-                              <option value="2" selected='selected'>2</option>
+                              <option value="1" selected='selected'>1</option>
+                              <option value="2">2</option>
                               <option value="3">3</option>
                               <option value="4">4</option>
                               <option value="5">5</option>
@@ -37,13 +37,13 @@
                           <label for='specialCharacterCount'># of Special Characters</label>
                           <select name='specialCharacterCount' id='specialCharacterCount'>
                               <option value="0">0</option>
-                              <option value="1">1</option>
-                              <option value="2" selected='selected'>2</option>
+                              <option value="1" selected='selected'>1</option>
+                              <option value="2">2</option>
                               <option value="3">3</option>
                               <option value="4">4</option>
                               <option value="5">5</option>
                           </select>
-                      <h2>Proposed password</h2>
+                      <h2>Results</h2>
                       <p class='password'>
                         <!-- Execute only after posting form-->
                         <?php  if ($_SERVER['REQUEST_METHOD']=='POST')
@@ -51,6 +51,7 @@
                           include("includes/generatePassword.php");
                         } ?>
                       </p>
+                    </br>
                       <input type='submit' class='btn btn-default' value='New Password'> <br/>
                       <a href='http://xkcd.com/936/'>xkcd archive: password strength</a>
                     </form>

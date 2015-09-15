@@ -14,36 +14,40 @@ $password = array();
 /*Get user selected values for number of words, numbers and special characters.
 Assummes that the origin form is using the POST method.*/
 $wordCount = $_POST['wordCount'];
-/*echo "wordCount: " . $wordCount ."<br>";*/
-
 $numberCount = $_POST['numberCount'];
-/*echo "numberCount: " . $numberCount ."<br>";*/
-
-
 $specialCharacterCount = (int)$_POST['specialCharacterCount'];
-/*echo "specialCharacterCount: " . $specialCharacterCount ."<br>";*/
 
-/* Add random elements for special characters, numbers and words
-to password array.  First we create a generic function to update
-a destination (arguably the password array) by picking values from
-a source (specialCharacters,numbers,wordCorpus).  Then, we call the
-function for each case. Using a function is cleaner and consistent with
-DNRY principles*/
+/* Create a generic function to select random elements form a source
+(for example: specialCharacters,numbers,wordCorpus) and then add the
+elements to a destination (arguably the password array). This function handles
+the special cases of 1 element (not an array) and 0 elements (ignore)*/
 
 function addElements ($source, &$destination,$count){
     $randomKeys  = array_rand($source, $count);
+    if (count($randomKeys) == 1){
+      /* If only one element, array_rand returns an integer, not an array */
+       $destination[] = $source[$randomKeys];
+    } elseif (count($randomKeys) == 0){
+      /* If no elements, we do nothing */
+    } else {
+      /* If elements <> 0,1 then we have an array of results */
       foreach ($randomKeys as $randomKey) {
-        $destination[] = $source[$randomKey];
-      }
+           $destination[] = $source[$randomKey];
+       }
+    }
 }
 
-addElements ($specialCharacters, $password,$specialCharacterCount);
-addElements ($numbers, $password,$numberCount);
+/* Call the addElements function to select words, numbers and special characters */
 addElements ($wordCorpus, $password,$wordCount);
+addElements ($numbers, $password,$numberCount);
+addElements ($specialCharacters, $password,$specialCharacterCount);
+
 
 /* At this point, the $password array has a list of randomly selected
 specialCharacters, numbers and words. However, they are in order.  We use
 the shuffle function to scramble the output and then output to screen*/
+  echo "Words = $wordCount, Special Characters = $specialCharacterCount, Numbers = $numberCount <br>";
+  echo "Proposed password = ";
     shuffle($password);
     foreach ($password as $key=>$value) {
       echo $value ;
