@@ -11,6 +11,18 @@ include("data.php");
 characters, numbers and words*/
 $password = array();
 
+/*Get user selected values for number of words, numbers and special characters.
+Assummes that the origin form is using the POST method.*/
+$wordCount = $_POST['wordCount'];
+echo "wordCount: " . $wordCount ."<br>";
+
+$numberCount = $_POST['numberCount'];
+echo "numberCount: " . $numberCount ."<br>";
+
+
+$specialCharacterCount = (int)$_POST['specialCharacterCount'];
+echo "specialCharacterCount: " . $specialCharacterCount ."<br>";
+
 /* Add random elements for special characters, numbers and words
 to password array.  First we create a generic function to update
 a destination (arguably the password array) by picking values from
@@ -25,9 +37,9 @@ function addElements ($source, &$destination, $count){
     }
 }
 
-addElements ($specialCharacters, $password,3);
-addElements ($numbers, $password,3);
-addElements ($wordCorpus, $password,3);
+addElements ($specialCharacters, $password,$specialCharacterCount);
+addElements ($numbers, $password,$numberCount);
+addElements ($wordCorpus, $password,$wordCount);
 
 /* At this point, the $password array has a list of randomly selected
 specialCharacters, numbers and words. However, they are in order.  We use
