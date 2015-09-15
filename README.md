@@ -22,3 +22,6 @@ For example array_rand() and shuffle().
   - The layout is mobile-first and responsive. To do this, I am using  [Skeleton](http://getskeleton.com), a very clean and light boilerplate. Specific CSS for this site are defined on zudbu.css
   - We are obtaining the Raleway font from [Google fonts](https://www.google.com/fonts)
   -
+
+## Sources
+- List of Common english words from gravityMmonkey [github](https://gist.github.com/gravitymonkey/2406023)
