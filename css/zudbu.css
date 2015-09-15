@@ -19,7 +19,7 @@ features and content for larger screen sizes*/
   color: #000099;
 }
 
-.parameters, .result {
+.parameters {
   padding: 5px 10px;
   border:1px solid #900000;
   border-radius: 5px;
@@ -66,9 +66,9 @@ h2, h3 {
 
 .password {
   text-align:center;
-  font-size:3rem;
-  margin:.2em;
-  padding:.5em;
+  font-size:2rem;
+  margin:.1em;
+  padding:.1em;
   color:#900000;
   background-color:#d3d3d3;
   font-weight: bold;
@@ -107,6 +107,9 @@ body {
 	border-radius:4px;
 	border:#bbbbbb 1px solid;
 	}
+input[type="submit"]{
+    background: linear-gradient(170deg,#D3D3D3 25%, #FFF 50%, #fff 75%, #d3d3d3 99%);
+  }
 
 /* Margin */
 .margin{

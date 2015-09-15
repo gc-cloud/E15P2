@@ -14,14 +14,14 @@ $password = array();
 /*Get user selected values for number of words, numbers and special characters.
 Assummes that the origin form is using the POST method.*/
 $wordCount = $_POST['wordCount'];
-echo "wordCount: " . $wordCount ."<br>";
+/*echo "wordCount: " . $wordCount ."<br>";*/
 
 $numberCount = $_POST['numberCount'];
-echo "numberCount: " . $numberCount ."<br>";
+/*echo "numberCount: " . $numberCount ."<br>";*/
 
 
 $specialCharacterCount = (int)$_POST['specialCharacterCount'];
-echo "specialCharacterCount: " . $specialCharacterCount ."<br>";
+/*echo "specialCharacterCount: " . $specialCharacterCount ."<br>";*/
 
 /* Add random elements for special characters, numbers and words
 to password array.  First we create a generic function to update
