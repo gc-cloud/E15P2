@@ -57,7 +57,7 @@
                     <p class='password'>
                       <?php  if ($_SERVER['REQUEST_METHOD']=='POST')
                       {
-                      include("includes/functions.php");
+                      include("includes/generatePassword.php");
                       } ?>
                     </p>
                   </div>
