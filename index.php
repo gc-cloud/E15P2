@@ -16,18 +16,41 @@
                 <main>
                   <hr/>
                   <h2>Generate a hard-to-guess password that you can remember!</h2>
+                  <p> We will create a complex password for you using a combination of
+                    words, numbers, and punctiation marks.  Choose how many of each you
+                  want and the program will generate the password.</p>
                   <form class="parameters" action="index.php" method="post">
 
                     <h3> Select Password Generation Parameters</h3>
                     <p class='options'>
-                      <label for='number_of_words'># of Words</label>
-                      <input maxlength=1 type='text' name='number_of_words' id='number_of_words' value=''>  (Max 9)
-                      <br/>
-                      <input type='checkbox' name='add_number' id='add_number' >
-                      <label for='add_number'>Add a number</label>
-                      <br>
-                      <input type='checkbox' name='add_symbol' id='add_symbol' >
-                      <label for='add_symbol'>Add a symbol</label>
+                      <label for='wordCount'># of Words</label>
+                      <select name='wordCount' id='wordCount'>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4" selected="selected">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                      </select>
+                      <label for='numberCount'># of Numbers</label>
+                        <select name='numberCount' id='numberCount'>
+                            <option value="0">0</option>
+                            <option value="1" selected="selected">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <label for='specialCharacterCount'># of Special Characters</label>
+                        <select name='specialCharacterCount' id='specialCharacterCount'>
+                            <option value="0">0</option>
+                            <option value="1" selected="selected">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+
                     </p>
                     <input type='submit' class='btn btn-default' value='New Password'> <br/>
                     <a href='http://xkcd.com/936/'>xkcd archive: password strength</a>
