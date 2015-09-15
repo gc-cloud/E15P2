@@ -1,5 +1,5 @@
-# CSCI-E15: Project 1
-### Portfolio /  Workflow Setup
+# CSCI-E15: Project 2
+### Portfolio /  PHP Basics
 This project creates a strong password in the xcdk style.  This is, a password that
 is easy for humans but hard for computers.  The basic idea is to select large passwords
 composed of words that humans can memorize (there is a basic security flaw with this
@@ -21,4 +21,4 @@ For example array_rand() and shuffle().
   - Collapsible menus (accordions) are based on the [jQuery User Interface](http://jqueryui.com)
   - The layout is mobile-first and responsive. To do this, I am using  [Skeleton](http://getskeleton.com), a very clean and light boilerplate. Specific CSS for this site are defined on zudbu.css
   - We are obtaining the Raleway font from [Google fonts](https://www.google.com/fonts)
-  - 
+  -
