@@ -5,11 +5,6 @@
   </head>
   <body>
   	<?php include("includes/header.php"); ?>
-    <!-- Test inclusion of functions -->
-
-
-
-
           <div class="container">
           <div class="row mainContent" title="Dynamic Web Apps Portfolio">
               <div class="twelve columns">
