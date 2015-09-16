@@ -24,8 +24,8 @@
               </div>
             </div>
             <div class="row">
-                      <div class="four columns">
-                        <label for='wordCount'># of Words</label>
+                      <div class="six columns">
+
                         <select name='wordCount' id='wordCount'>
                             <option <?php if($wordCount=="0") echo 'selected="selected"'; ?> value="0">0</option>
                             <option <?php if($wordCount=="1") echo 'selected="selected"'; ?> value="1">1</option>
@@ -35,10 +35,17 @@
                             <option <?php if($wordCount=="5") echo 'selected="selected"'; ?> value="5">5</option>
                             <option <?php if($wordCount=="6") echo 'selected="selected"'; ?> value="6">6</option>
                         </select>
-                        <input type="checkbox" name="uppercase" <?php if($uppercase) echo 'value="true" checked'; ?> > uppercase<br>
+                        <label for='wordCount'># of Words</label>
                       </div>
-                      <div class="four columns">
-                        <label for='numberCount'># of Numbers</label>
+                    <div class="six columns">
+
+                      <input type="checkbox" name="uppercase" <?php if($uppercase) echo 'value="true" checked'; ?> >
+                      <label for='uppercase'>Uppercase</label>
+                    </div>
+              </div> <!-- end row -->
+              <div class="row">
+                      <div class="six columns">
+
                           <select name='numberCount' id='numberCount'>
                             <option <?php if($numberCount=="0") echo 'selected="selected"'; ?> value="0">0</option>
                             <option <?php if($numberCount=="1") echo 'selected="selected"'; ?> value="1">1</option>
@@ -48,9 +55,10 @@
                             <option <?php if($numberCount=="5") echo 'selected="selected"'; ?> value="5">5</option>
                             <option <?php if($numberCount=="6") echo 'selected="selected"'; ?> value="6">6</option>
                           </select>
+                          <label for='numberCount'># of Numbers</label>
                         </div>
-                        <div class="four columns">
-                          <label for='specialCharacterCount'># of Special Characters</label>
+                        <div class="six columns">
+
                           <select name='specialCharacterCount' id='specialCharacterCount'>
                             <option <?php if($specialCharacterCount=="0") echo 'selected="selected"'; ?> value="0">0</option>
                             <option <?php if($specialCharacterCount=="1") echo 'selected="selected"'; ?> value="1">1</option>
@@ -60,6 +68,7 @@
                             <option <?php if($specialCharacterCount=="5") echo 'selected="selected"'; ?> value="5">5</option>
                             <option <?php if($specialCharacterCount=="6") echo 'selected="selected"'; ?> value="6">6</option>
                           </select>
+                          <label for='specialCharacterCount'># of Special Characters</label>
                         </div>
                   </div>
                   <div class="row">
