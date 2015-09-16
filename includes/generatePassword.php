@@ -16,12 +16,12 @@ $_POST[$variable] to a default if $_POST[$variable] is empty.  This function is
 meant to be used to support sticky forms that keep the values selected by the user */
 
 /* If set, get user defined values for number of words, numbers and
-special characters, otherwise set defaults.*/
+special characters, otherwise set defaults. These values are used to set sticky
+fields in the submitting forms*/
 isset($_POST['wordCount'])? $wordCount = $_POST['wordCount']:$wordCount= 4;
 isset($_POST['numberCount'])? $numberCount = $_POST['numberCount']:$numberCount= 1;
 isset($_POST['specialCharacterCount'])? $specialCharacterCount = $_POST['specialCharacterCount']:$specialCharacterCount= 1;
 isset($_POST['uppercase'])? $uppercase = $_POST['uppercase']:$uppercase= false;
-echo $uppercase;
 
 /* Create a generic function to select random elements form a source
 (for example: specialCharacters,numbers,wordCorpus) and then add the
