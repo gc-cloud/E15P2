@@ -28,16 +28,14 @@ features and content for larger screen sizes*/
   color: #000099;
 }
 
-.parameters {
+.parameters, .jumbotron {
   padding: 5px 10px;
   border:1px solid #900000;
+  background-color:#eee;
   border-radius: 5px;
 }
 
 
-label{
- display: inline;
-}
 
 hr {
 	background:#900000;
@@ -78,7 +76,7 @@ h2, h3 {
   margin:.1em;
   padding:.1em;
   color:#900000;
-  background-color:#d3d3d3;
+  background-color:#FFF;
   font-weight: bold;
   width: 98%;
   border-radius: 5px;
@@ -103,9 +101,11 @@ body {
 
 
 label, select, input{
-  margin: 5px;
-}
-
+  display: inline;
+  padding: 10px;
+  margin-bottom: 10px;
+  }
+/*
 .three.columns,.twelve.columns {
 	overflow:hidden;
 	border:none;
@@ -114,6 +114,7 @@ label, select, input{
 .twelve.columns {
 	background-color:#fff;
 	}
+*/
 
 .border {
 	margin-top:.5em;
