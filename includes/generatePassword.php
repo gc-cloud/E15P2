@@ -44,12 +44,30 @@ addElements ($specialCharacters, $password,$specialCharacterCount);
 
 
 /* At this point, the $password array has a list of randomly selected
-specialCharacters, numbers and words. However, they are in order.  We use
-the shuffle function to scramble the output and then output to screen*/
+specialCharacters, numbers and words. However, they are in the order that the
+elements were selected.  We use the shuffle function to scramble the elements*/
   echo "Words = $wordCount, Special Characters = $specialCharacterCount, Numbers = $numberCount <br>";
+  shuffle($password);
+
+/* This function suffles an array and outputs the proposed password to the terminal. Assummes the
+components  */
+/*function showPassword($an_Array){
+
   echo "Proposed password = ";
     shuffle($password);
     foreach ($password as $key=>$value) {
       echo $value ;
     }
+    }
+*/
+
+
+  function printPassword($an_Array){
+      foreach ($an_Array as $key=>$value) {
+        echo $value ;
+      }
+      }
+
+printPassword($password);
+
 ?>

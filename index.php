@@ -5,6 +5,7 @@
   </head>
   <body>
   	<?php include("includes/header.php"); ?>
+    
           <div class="container">
           <div class="row mainContent" title="Dynamic Web Apps Portfolio">
               <div class="twelve columns">
@@ -12,8 +13,8 @@
                   <hr/>
                   <h2>Generate a hard-to-guess password that you can remember!</h2>
                   <p> We will create a complex password for you using a combination of
-                    words, numbers, and punctiation marks.  Choose how many of each you
-                  want and the program will generate the password.</p>
+                    words, numbers, and special characters. <a href='http://xkcd.com/936/'>(reference : xkcd archive)</a></p>
+
                     <form action="index.php" method="post" class="options, parameters">
                       <h3> Select Password Requirements</h3>
                         <label for='wordCount'># of Words</label>
@@ -43,17 +44,18 @@
                               <option value="4">4</option>
                               <option value="5">5</option>
                           </select>
-                      <h2>Results</h2>
+                        </br>
+                          <input type='submit' class='btn btn-default' value='New Password'> <br/>
+                      <h2>Proposed password</h2>
                       <p class='password'>
                         <!-- Execute only after posting form-->
                         <?php  if ($_SERVER['REQUEST_METHOD']=='POST')
                         {
                           include("includes/generatePassword.php");
+                          printPassword($password);
                         } ?>
                       </p>
                     </br>
-                      <input type='submit' class='btn btn-default' value='New Password'> <br/>
-                      <a href='http://xkcd.com/936/'>xkcd archive: password strength</a>
                     </form>
                   </main>
               </div> <!--End twelve columns -->
