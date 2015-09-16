@@ -25,7 +25,8 @@ echo $uppercase;
 
 /* Create a generic function to select random elements form a source
 (for example: specialCharacters,numbers,wordCorpus) and then add the
-elements to a destination (arguably the password array). This function handles
+elements to a destination (arguably the password array). If $uppercase is true then
+elements start with an uppercase.  Finnaly, this function handles
 the special cases of 1 element (not an array) and 0 elements (ignore)*/
 
 function addElements ($source, &$destination,$count, $upperCase){
@@ -33,7 +34,6 @@ function addElements ($source, &$destination,$count, $upperCase){
     if (count($randomKeys) == 1){
       /* If only one element, array_rand returns an integer, not an array */
       ($upperCase)? $destination[] = ucfirst($source[$randomKeys]) : $destination[] = $source[$randomKeys];
-
     } elseif (count($randomKeys) == 0){
       /* If no elements, we do nothing */
     } else {

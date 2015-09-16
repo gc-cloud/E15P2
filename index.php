@@ -5,10 +5,7 @@
   </head>
   <body>
   	<?php include("includes/header.php"); ?>
-    <?php
-    {
-      include("includes/generatePassword.php");
-    } ?>
+    <?php include("includes/generatePassword.php");?>
           <div class="container">
           <div class="row mainContent" title="Dynamic Web Apps Portfolio">
               <div class="twelve columns">
@@ -18,14 +15,9 @@
                   <p> We will create a complex password for you using a combination of
                     words, numbers, and special characters. <a href='http://xkcd.com/936/'>(reference : xkcd archive)</a></p>
                     <form action="index.php" method="post" class="options, parameters">
-                      <!-- run server side scritps only after form is posted-->
-                      <!--?php  if ($_SERVER['REQUEST_METHOD']=='POST')
-                      {
-                        include("includes/generatePassword.php");
-                      } ?-->
-
                       <h3> Select Password Requirements</h3>
                         <label for='wordCount'># of Words</label>
+                        <input type="checkbox" name="uppercase" <?php if($uppercase) echo 'value="true" checked'; ?> > uppercase<br>
                         <select name='wordCount' id='wordCount'>
                             <option <?php if($wordCount=="0") echo 'selected="selected"'; ?> value="0">0</option>
                             <option <?php if($wordCount=="1") echo 'selected="selected"'; ?> value="1">1</option>
@@ -55,8 +47,7 @@
                             <option <?php if($specialCharacterCount=="5") echo 'selected="selected"'; ?> value="5">5</option>
                             <option <?php if($specialCharacterCount=="6") echo 'selected="selected"'; ?> value="6">6</option>
                           </select>
-                          <!--input type="checkbox" name="uppercases" value="true" checked> uppercase<br-->
-                          <input type="checkbox" name="uppercase" <?php if($uppercase) echo 'value="true" checked'; ?> > uppercase<br>
+
                         </br>
                           <input type='submit' class='btn btn-default' value='New Password'> <br/>
                       <h2>Proposed password</h2>
