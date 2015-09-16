@@ -5,7 +5,6 @@
   </head>
   <body>
   	<?php include("includes/header.php"); ?>
-    
           <div class="container">
           <div class="row mainContent" title="Dynamic Web Apps Portfolio">
               <div class="twelve columns">
@@ -14,8 +13,12 @@
                   <h2>Generate a hard-to-guess password that you can remember!</h2>
                   <p> We will create a complex password for you using a combination of
                     words, numbers, and special characters. <a href='http://xkcd.com/936/'>(reference : xkcd archive)</a></p>
-
                     <form action="index.php" method="post" class="options, parameters">
+                      <!-- run server side scritps only after form is posted-->
+                      <?php  if ($_SERVER['REQUEST_METHOD']=='POST')
+                      {
+                        include("includes/generatePassword.php");
+                      } ?>
                       <h3> Select Password Requirements</h3>
                         <label for='wordCount'># of Words</label>
                         <select name='wordCount' id='wordCount'>
@@ -48,12 +51,7 @@
                           <input type='submit' class='btn btn-default' value='New Password'> <br/>
                       <h2>Proposed password</h2>
                       <p class='password'>
-                        <!-- Execute only after posting form-->
-                        <?php  if ($_SERVER['REQUEST_METHOD']=='POST')
-                        {
-                          include("includes/generatePassword.php");
-                          printPassword($password);
-                        } ?>
+                        <?php printPassword($password); ?>
                       </p>
                     </br>
                     </form>

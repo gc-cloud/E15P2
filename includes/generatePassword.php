@@ -49,25 +49,14 @@ elements were selected.  We use the shuffle function to scramble the elements*/
   echo "Words = $wordCount, Special Characters = $specialCharacterCount, Numbers = $numberCount <br>";
   shuffle($password);
 
-/* This function suffles an array and outputs the proposed password to the terminal. Assummes the
-components  */
-/*function showPassword($an_Array){
-
-  echo "Proposed password = ";
-    shuffle($password);
-    foreach ($password as $key=>$value) {
-      echo $value ;
-    }
-    }
-*/
-
-
+/* This function outputs the proposed password to the terminal. It is designed to
+be called by the form using it */
   function printPassword($an_Array){
-      foreach ($an_Array as $key=>$value) {
+      foreach ($an_Array as $key=>$value){
         echo $value ;
       }
-      }
+  }
 
-printPassword($password);
+/*printPassword($password);*/
 
 ?>
