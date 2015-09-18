@@ -1,5 +1,5 @@
-    <header>
-      <div class="container">
+    <header class="page-header">
+      <div class="container-fluid">
       <div class="projectName">
         <h1 >xkcd</h1>
         <h2 > Password Generator</h2>

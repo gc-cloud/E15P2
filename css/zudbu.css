@@ -9,8 +9,9 @@ features and content for larger screen sizes*/
 .projectName {
   float: left;
   font-weight: bold;
+  font-weight: bolder;
   padding: 5px 10px;
-  font-size: 3.0vw;/* Define size in vieport terms for responsivenes */
+  /*font-size: 2.0vw;*//* Define size in vieport terms for responsivenes */
   width:60%;
 }
 
@@ -28,7 +29,7 @@ features and content for larger screen sizes*/
   color: #000099;
 }
 
-.parameters, .jumbotron {
+.jumbotron {
   padding: 5px 10px;
   border:1px solid #900000;
   background-color:#eee;
@@ -36,6 +37,21 @@ features and content for larger screen sizes*/
 }
 
 
+.row {
+  padding: 10px;
+}
+
+.password {
+  text-align:center;
+  font-size:2rem;
+  margin:.1em;
+  padding:.1em;
+  color:#900000;
+  background-color:#FFF;
+  font-weight: bold;
+  width: 98%;
+  border-radius: 5px;
+  }
 
 hr {
 	background:#900000;
@@ -70,34 +86,18 @@ h2, h3 {
 	margin-bottom:.2em;
 	}
 
-.password {
-  text-align:center;
-  font-size:2rem;
-  margin:.1em;
-  padding:.1em;
-  color:#900000;
-  background-color:#FFF;
-  font-weight: bold;
-  width: 98%;
-  border-radius: 5px;
-  }
 
 
-/* Override jQuery UI settings to match rest of site */
-.ui-widget-content a {
-    color: #1EAEDB;;
-}
 
-/* Override skeleton settings to my preference */
+
+
+/* Override default settings to my preference */
 body {
 	font-family:Raleway, sans-serif;
   background-image:linear-gradient(180deg,#fff 55%, #d3d3d3 98%);
 	margin: 0 10%;
 	}
 
-.project{
-  font-weight: bold;
-}
 
 
 label, select, input{
@@ -105,35 +105,14 @@ label, select, input{
   padding: 10px;
   margin-bottom: 10px;
   }
-/*
-.three.columns,.twelve.columns {
-	overflow:hidden;
-	border:none;
-	}
 
-.twelve.columns {
-	background-color:#fff;
-	}
-*/
 
-.border {
-	margin-top:.5em;
-	padding:.5em;
-	border-radius:4px;
-	border:#bbbbbb 1px solid;
-	}
+
 
 input[type="submit"]{
     background: linear-gradient(170deg,#D3D3D3 25%, #FFF 50%, #fff 75%, #d3d3d3 99%);
   }
 
-/* Margin */
-.margin{
-	width:100%;
-	padding:0;
-	margin:0;
-	text-align:center;
-	}
 
 /* Footer */
 footer {
@@ -148,17 +127,9 @@ footer p {
 
 /***************************************** Progressive enhancements  *****************************************/
 
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-
-	/* Display grape and food match information */
-	td:nth-of-type(3){
-	display:flex;
-	border-bottom: 1px solid  #e0e0e0;
-	}
-	td:nth-of-type(4){
-	display:flex;
-	border-bottom: 1px solid  #e0e0e0;
-	}
+/* Override bootstrap defaults for larger than tablet */
+@media screen and (min-width: 768px)
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 10px;
+    padding-left: 10px;
 }
