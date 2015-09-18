@@ -14,7 +14,6 @@
       </div>
       <div class="jumbotron">
       <form action="index.php" method="post" >
-
         <div class="row">
             <h3> Select Password Requirements</h3>
         </div>
@@ -76,11 +75,9 @@
           </div>
         </div>
         <div class="row">
-
             <h2>Your new password is:</h2>
             <h3 class="password"> <?php printPassword($password); ?> </h3>
             <br/>
-
         </div>
       </form>
     </div>
