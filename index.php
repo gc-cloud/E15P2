@@ -37,7 +37,7 @@
           </div>
           <div class="col-sm-3">
             <!--input type="checkbox" name="camelCase" <?php if($camelCase) echo 'value="true" checked="checked"'; ?> -->
-            <input type="checkbox" name="camelCase" <?php if($camelCase) echo 'value="true" checked="checked"'; ?> >
+            <input type="checkbox" name="camelCase" value="true" checked="checked" >
           </div>
         </div> <!-- end row -->
         <div class="row">
