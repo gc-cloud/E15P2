@@ -18,7 +18,7 @@ fields in the submitting forms*/
   isset($_POST['wordCount'])? $wordCount = $_POST['wordCount']:$wordCount= 4;
   isset($_POST['numberCount'])? $numberCount = $_POST['numberCount']:$numberCount= 1;
   isset($_POST['specialCharacterCount'])? $specialCharacterCount = $_POST['specialCharacterCount']:$specialCharacterCount= 1;
-  isset($_POST['camelCase'])? $camelCase=$_POST['camelCase']:$camelCase=false;
+  isset($_POST['camelCase'])? $camelCase=$_POST['camelCase']:$camelCase="true";
 
 /* Function Definitions*/
 /*---------------------*/
@@ -33,13 +33,13 @@ function addElements ($source, &$destination, $count, $camelCase){
     $randomKeys  = array_rand($source, $count);
     if (count($randomKeys) == 1){
       /* If only one element, array_rand returns an integer, not an array */
-      ($camelCase)? $destination[] = ucfirst($source[$randomKeys]) : $destination[] = $source[$randomKeys];
+      ($camelCase=="true")? $destination[] = ucfirst($source[$randomKeys]) : $destination[] = $source[$randomKeys];
     } elseif (count($randomKeys) == 0){
       /* If no elements, we do nothing */
     } else {
       /* If elements <> 0,1 then we have an array of results */
       foreach ($randomKeys as $randomKey) {
-          ($camelCase)?  $destination[] = ucfirst($source[$randomKey]) :$destination[] = $source[$randomKey];
+          ($camelCase=="true")?  $destination[] = ucfirst($source[$randomKey]) :$destination[] = $source[$randomKey];
        }
     }
 }

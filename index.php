@@ -39,7 +39,12 @@
 
         <div class="row">
           <div class="col-sm-2">
-            <input type="checkbox" name="camelCase" <?php if($camelCase) {echo ' value="true" checked ';} else {echo 'value="false"';} ?>>
+            <!--input type="checkbox" name="camelCase" <?php if($camelCase) {echo ' value="true" checked ';} else {echo 'value="false"';} ?>-->
+            <select name='camelCase' id='camelCase'>
+              <option <?php if($camelCase=="false") echo 'selected="selected"'; ?> value="false">N</option>
+              <option <?php if($camelCase=="true") echo 'selected="selected"'; ?> value="true">Y</option>
+            </select>
+
           </div>
           <div class="col-sm-6">
             <label>Use CamelCase</label>
