@@ -36,7 +36,7 @@
             <label for="camelCase">UseCamelCase</label>
           </div>
           <div class="col-sm-3">
-            <input type="checkbox" name="camelCase" <?php if($camelCase) echo 'value="true" checked'; ?> >
+            <input type="checkbox" name="camelCase" <?php if($camelCase) echo 'value="true" checked="checked"'; ?> >
           </div>
         </div> <!-- end row -->
         <div class="row">
