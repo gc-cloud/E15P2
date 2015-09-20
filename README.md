@@ -39,6 +39,10 @@ the screen.
 
 ## Sources
 - All the source data for words, numbers and special characters is kept in pre-defined
-arrays included in data.php.  Selection of numbers and special characters was straightforward.
+arrays included in data.php.  
+- Selection of numbers was straightforward.
+- Selection of special characters was based on the layout of my keyboard.  To note, the
+array contains the html escape sequences instead of the charactes themselves.  sequences
+codes were obtained from [theasciicode.com](http://www.theasciicode.com.ar/ascii-control-characters/escape-ascii-code-27.html)
 The list of common english words is based on content from gravityMmonkey
 [github](https://gist.github.com/gravitymonkey/2406023)

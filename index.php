@@ -33,7 +33,7 @@
             </select>
           </div>
           <div class="col-sm-3">
-            <label for='camelCase'>UseCamelCase</label>
+            <label for="camelCase">UseCamelCase</label>
           </div>
           <div class="col-sm-3">
             <input type="checkbox" name="camelCase" <?php if($camelCase) echo 'value="true" checked'; ?> >
