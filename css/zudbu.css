@@ -99,6 +99,7 @@ label, select, input{
   display: inline;
   padding: 10px;
   margin-bottom: 10px;
+  font-size: 18px;
   }
 
 input[type="submit"]{
