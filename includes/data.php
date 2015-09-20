@@ -8,6 +8,7 @@
   $specialCharacters = array("&#33;","&#35;","&#36;","&#37;","&#38;","&#42;","&#43;","&#46;","&#64;","&#95;");
 
   $numbers = array("0","1","2","3","4","5","6","7","8","9");
+  
   $wordCorpus = array("hello", "world", "this", "is", "random","stuff",
   "the","of","and","a","to","in","is","you","that","it","he","was","for",
   "on","are","as","with","his","they","I","at","be","this","have","from",

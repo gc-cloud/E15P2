@@ -11,8 +11,20 @@ cracked using a brute force attack.
 ### Live Site Location
 Please visit [p2.zudbu.com](http://p2.zudbu.com).  This domain is dedicated (currently) to my CSCIE15 work.
 
+### Demo location
+I decided to take on some of the extra challenges.
+
+
+### Extra Challenges
+I decided to take on some of the extra challenges.
+- Using PHP includes,
+- Implemented styling using bootstrap
+- Made sure site displays nicely on different screen sizes (tested with iPhones and desktops)
+- Added functionality to select CamelCase
+
+
 ### Site organization
-I decided to take on some of the extra challenges and am using a combination of PHP includes,
+I decided to take on some of the extra challenges. Specifically 1) I am using PHP includes,
 and implemented styling using bootstrap. From a PHP standpoint, the solution uses several
 includes for html structure (head, header, footer, data), one for the data structures (lists of words,
 special characters, etc), and one for the functions.  

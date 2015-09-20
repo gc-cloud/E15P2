@@ -1,23 +1,71 @@
 @charset "UTF-8";
 /* Responsive CSS Document using a mobile-first approach.  Items outside a media
-query apply to all screens.  We  enhance presentation progressively adding
-features and content for larger screen sizes*/
+query apply to all screens.  Items inside media queries  adjust features based
+on the secreen size*/
 
 /********************** All screen sizes ****************************************/
 
-/* Fluid Header */
-.projectName {
+/* Override default bootstrap settings to set the overall look and feel to
+my preference */
+body {
+	font-family:Raleway, sans-serif; /* Raleway imported from Google fonts */
+  background-image:linear-gradient(180deg,#fff 55%, #d3d3d3 98%);
+	margin: 0 10%;
+}
+
+header {
+	padding-top:1em;
+  width:100%;
+	}
+
+h1, h2, h3 {
+	color:#900000;
+	padding:.1em;
+  margin-top: 10px;
+	}
+
+header h1, header h2 {
+	text-align: center;
+	font-size: 2em;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+header h2 ,h2, h3 {
+	font-size:1.2em;
+	margin-bottom:.2em;
+	}
+
+label, select, input, .col-sm-2, .col-sm-6{
+  display: inline; /* set form elements to align nicely*/
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  }
+
+input[type="submit"]{
+    background: linear-gradient(170deg,#D3D3D3 25%, #FFF 50%, #fff 75%, #d3d3d3 99%);
+  }
+
+footer {
+	font-size: smaller;
+	text-align:center;
+	}
+
+footer p {
+	padding: 1em;
+	}
+
+.projectName { /* Set header name to the left and make prominent*/
   float: left;
   font-weight: bold;
-  font-weight: bolder;
   padding: 5px 10px;
-  /*font-size: 2.0vw;*//* Define size in vieport terms for responsivenes */
   width:55%;
 }
 
 
-.logo {
-  display:block;
+.logo { /*float logo to the righ*/
 	margin: auto;
   max-width: 45%;
   border-radius: 5px;
@@ -36,9 +84,20 @@ features and content for larger screen sizes*/
   border-radius: 5px;
 }
 
+.container-fluid .jumbotron p {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.element.style {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 .row {
-  padding: 10px;
+  padding: 5px 10px;
+
 }
 
 .password {
@@ -51,76 +110,24 @@ features and content for larger screen sizes*/
   font-weight: bold;
   width: 98%;
   border-radius: 5px;
-  overflow: scroll;
-  font-size: 4vw;
+  overflow: scroll; /* very long passwords don't fit in a box */
+  font-size: 20px;
   }
 
-hr {
-	background:#900000;
-	border:0;
-	height:1px;
-}
-
-header {
-	padding-top:1em;
-  width:100%;
-	}
-
-h1, h2, h3 {
-	color:#900000;
-	padding:.2em;
-	}
-
-header h1, header h2 {
-	text-align: center;
-	font-size: 2em;
-  padding-top: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-header h2 {
-	font-size: 1.5em;
-}
-
-h2, h3 {
-	font-size:1.5em;
-	margin-bottom:.2em;
-	}
-
-/* Override default settings to my preference */
-body {
-	font-family:Raleway, sans-serif;
-  background-image:linear-gradient(180deg,#fff 55%, #d3d3d3 98%);
-	margin: 0 10%;
-	}
-
-label, select, input{
-  display: inline;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  }
-
-input[type="submit"]{
-    background: linear-gradient(170deg,#D3D3D3 25%, #FFF 50%, #fff 75%, #d3d3d3 99%);
-  }
-
-footer {
-	font-size: smaller;
-	text-align:center;
-	}
-
-footer p {
-	padding: 1em;
-	}
 
 /***************************************** Progressive enhancements  *****************************************/
 
-/* Override bootstrap defaults for larger than tablet */
+/* Override bootstrap defaults for larger screens  */
 @media screen and (min-width: 768px){
-  .container .jumbotron, .container-fluid .jumbotron {
-      padding-right: 10px;
-      padding-left: 10px;
+  .container .jumbotron, .container-fluid .jumbotron,
+  .container-fluid .jumbotron p, .password,
+  label, select, input {
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 20px;
+  }
+
+  header h1, header h2{
+    font-size: 35px;
   }
 }

@@ -18,7 +18,6 @@ fields in the submitting forms*/
   isset($_POST['wordCount'])? $wordCount = $_POST['wordCount']:$wordCount= 4;
   isset($_POST['numberCount'])? $numberCount = $_POST['numberCount']:$numberCount= 1;
   isset($_POST['specialCharacterCount'])? $specialCharacterCount = $_POST['specialCharacterCount']:$specialCharacterCount= 1;
-/*  !isset($_POST['camelCase'])? $camelCase=false:$camelCase=true;*/
   isset($_POST['camelCase'])? $camelCase=$_POST['camelCase']:$camelCase=false;
 
 /* Function Definitions*/
@@ -30,7 +29,7 @@ elements to a destination (arguably the password array). If $camelCase is true t
 each element start with an uppercase.  Finally, this function handles
 the special cases of 1 element (not an array) and 0 elements (ignore)*/
 
-function addElements ($source, &$destination,$count, $camelCase){
+function addElements ($source, &$destination, $count, $camelCase){
     $randomKeys  = array_rand($source, $count);
     if (count($randomKeys) == 1){
       /* If only one element, array_rand returns an integer, not an array */
@@ -55,7 +54,6 @@ specialCharacters, numbers and words. However, they are in the order that the
 elements were selected.  We use the shuffle function to scramble the elements*/
   shuffle($password);
 
-
 /* This function outputs the proposed password to the terminal. It is designed to
 be called by the form using it */
     function printPassword($an_Array){
@@ -63,6 +61,4 @@ be called by the form using it */
           echo $value ;
         }
     }
-
-
 ?>
