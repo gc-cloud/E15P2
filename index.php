@@ -74,7 +74,7 @@
           <div class="col-sm-6">
             <label>Use CamelCase</label>
           </div>
-        </div> 
+        </div>
         <div class="row">
           <div class="col-sm-12">
             <input type='submit' class='btn btn-default' value='New Password'>
@@ -84,7 +84,7 @@
             <h2>Your new password is:</h2>
             <h3 class="password"> <?php printPassword($password); ?> </h3>
             <br/>
-            <a href='http://xkcd.com/936/'>Inspiration : xkcd archive</a>
+            <a href='http://xkcd.com/936/' class="alink">Inspiration : xkcd archive</a>
         </div>
       </form>
     </div>

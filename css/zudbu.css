@@ -66,6 +66,10 @@ footer p {
 	padding: 1em;
 	}
 
+.row a{
+  margin-left: 15px;
+}
+
 .optionalText{
   display: none;
 }
