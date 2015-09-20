@@ -12,7 +12,7 @@ cracked using a brute force attack.
 Please visit [p2.zudbu.com](http://p2.zudbu.com).  This domain is dedicated (currently) to my CSCIE15 work.
 
 ### Demo location
-I decided to take on some of the extra challenges.
+Password generator a [video](http://p2.zudbu.com) in youtube. 
 
 
 ### Extra Challenges
