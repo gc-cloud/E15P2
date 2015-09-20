@@ -9,9 +9,9 @@
     <div class="container-fluid" title="Dynamic Web Apps Portfolio"> <!-- Start Main container -->
 
       <div class="jumbotron">
-          <h2>Generate a hard-to-guess password that you can remember!</h2>
-          <p> We will create a complex password for you using a combination of
-          words, numbers, and special characters. <a href='http://xkcd.com/936/'>(reference : xkcd archive)</a></p>
+          <h2>Generate a hard-to-crack password that you can remember!</h2>
+          <p> We will create a password for you using a combination of
+          words, numbers, and special characters. </p>
       </div>
 
       <div class="jumbotron">
@@ -19,7 +19,6 @@
         <div class="row">
             <h2> Select Password Requirements</h2>
         </div>
-
         <div class="row">
           <div class="col-sm-2">
             <select name='wordCount' id='wordCount'>
@@ -36,27 +35,15 @@
             <label for='wordCount'># of Words</label>
           </div>
         </div>
-
         <div class="row">
           <div class="col-sm-2">
-            <!--select name='camelCase' id='camelCase'>
-              <option <?php if($camelCase=="false") echo 'selected="selected"'; ?> value="false">N</option>
-              <option <?php if($camelCase=="true") echo 'selected="selected"'; ?> value="true">Y</option>
-            </select-->
-<!--
-                  No <input type="radio" name="camelCase" value="false" id="noCamel"<?php if($camelCase=="false") echo 'checked'; ?> />
-                  Yes <input type="radio" name="camelCase" value="true" id="yesCamel" <?php if($camelCase=="true") echo 'checked'; ?>  />
--->
-                  <input type="checkbox" name="camelCase" <?php if($camelCase=="true") echo 'value="true" checked'; ?>  />
-
+            <input type="checkbox" name="camelCase" <?php if($camelCase=="true") echo 'value="true" checked'; ?>  />
           </div>
           <div class="col-sm-6">
             <label>Use CamelCase</label>
           </div>
         </div> <!-- end row -->
-
         <div class="row">
-
           <div class="col-sm-2">
             <select name='numberCount' id='numberCount'>
               <option <?php if($numberCount=="0") echo 'selected="selected"'; ?> value="0">0</option>
@@ -71,9 +58,7 @@
           <div class="col-sm-6">
             <label for='numberCount'># of Numbers</label>
           </div>
-
         </div>
-
         <div class="row">
           <div class="col-sm-2">
             <select name='specialCharacterCount' id='specialCharacterCount'>
@@ -90,21 +75,17 @@
             <label for='specialCharacterCount'># of Special Characters</label>
           </div>
         </div>
-
-
-
         <div class="row">
           <div class="col-sm-12">
             <input type='submit' class='btn btn-default' value='New Password'>
           </div>
         </div>
-
         <div class="row">
             <h2>Your new password is:</h2>
             <h3 class="password"> <?php printPassword($password); ?> </h3>
             <br/>
+            <a href='http://xkcd.com/936/'>Inspiration : xkcd archive</a>
         </div>
-
       </form>
     </div>
     </div> <!--End mainContainer-->
