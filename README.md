@@ -12,8 +12,7 @@ cracked using a brute force attack.
 Please visit [p2.zudbu.com](http://p2.zudbu.com).  This domain is dedicated (currently) to my CSCIE15 work.
 
 ### Demo location
-Password generator a [video](http://p2.zudbu.com) in youtube. 
-
+Password generator a [video https://youtu.be/sJJcIBwy07A](https://youtu.be/sJJcIBwy07A) in youtube.
 
 ### Extra Challenges
 I decided to take on some of the extra challenges.
@@ -24,10 +23,10 @@ I decided to take on some of the extra challenges.
 
 
 ### Site organization
-I decided to take on some of the extra challenges. Specifically 1) I am using PHP includes,
+I decided to take on some of the extra challenges. Specifically, I am using PHP includes,
 and implemented styling using bootstrap. From a PHP standpoint, the solution uses several
-includes for html structure (head, header, footer, data), one for the data structures (lists of words,
-special characters, etc), and one for the functions.  
+includes for html structure (head, header, footer, data), one incldue for the data structures (lists of words,
+special characters, etc), and one include for the server side functions.  
   - The main content is on index.php.  Head, Header and Footer content is obtained from calls to
    head.php, header.php and footer.php
   - The layout is mobile-first and responsive. To do this, I am using [bootstrap](http://getbootstrap.com).
@@ -42,8 +41,8 @@ For example array_rand() and shuffle().
 elements from an array ($source) and adds them to a destination array ($destination).
 $count drives how many elements will be selected. If $camelCase is true we use PHP's
 ucfirst() function to capitalize the first letter of each selected word.
-- With the appropriate parameters, we run addElements()  multiple times to select
-the desired numbers of words,numbers and special characters.
+- With the appropriate parameters, we run addElements($source, &$destination,$count, $camelCase)
+ multiple times to select the desired numbers of words,numbers and special characters.
 - Once the destination array has all the desired elements, its contents are shuffled
 using PHP's shuffle() function.  
 - Finally, the function printPassword($an_Array) is used to output the result to
