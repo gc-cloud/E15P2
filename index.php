@@ -10,7 +10,7 @@
 
       <div class="jumbotron">
           <h2>Generate a hard-to-crack password that you can remember!</h2>
-          <p> We will create a password for you using a combination of
+          <p class="optionalText"> We will create a password for you using a combination of
           words, numbers, and special characters. </p>
       </div>
 
