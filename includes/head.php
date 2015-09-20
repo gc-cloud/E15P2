@@ -12,7 +12,6 @@
 <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
 <!-- CSS -->
-<link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="bootstrap-3.3.5/css/bootstrap.min.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="bootstrap-3.3.5/css/bootstrap-theme.min.css">
