@@ -44,18 +44,6 @@ function addElements ($source, &$destination,$count, $camelCase){
     }
 }
 
-/* This function outputs the proposed password to the terminal. It is designed to
-be called by the form using it */
-  function printPassword($an_Array){
-      foreach ($an_Array as $key=>$value){
-        echo $value ;
-      }
-  }
-
-
-/* Call functions */
-/*---------------*/
-
 /* Call the addElements function to select words, numbers and special characters */
   addElements ($wordCorpus, $password,$wordCount, $camelCase);
   addElements ($numbers, $password,$numberCount, $camelCase);
@@ -65,5 +53,15 @@ be called by the form using it */
 specialCharacters, numbers and words. However, they are in the order that the
 elements were selected.  We use the shuffle function to scramble the elements*/
   shuffle($password);
+
+
+/* This function outputs the proposed password to the terminal. It is designed to
+be called by the form using it */
+    function printPassword($an_Array){
+        foreach ($an_Array as $key=>$value){
+          echo $value ;
+        }
+    }
+
 
 ?>

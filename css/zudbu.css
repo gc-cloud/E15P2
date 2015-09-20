@@ -12,14 +12,14 @@ features and content for larger screen sizes*/
   font-weight: bolder;
   padding: 5px 10px;
   /*font-size: 2.0vw;*//* Define size in vieport terms for responsivenes */
-  width:60%;
+  width:55%;
 }
 
 
 .logo {
   display:block;
 	margin: auto;
-	max-width:25%;
+  max-width: 45%;
   border-radius: 5px;
   float: right;
   padding-bottom: .1em;
@@ -43,7 +43,7 @@ features and content for larger screen sizes*/
 
 .password {
   text-align:center;
-  font-size:2rem;
+  font-size:1.5em;
   margin:.1em;
   padding:.1em;
   color:#900000;
@@ -51,6 +51,8 @@ features and content for larger screen sizes*/
   font-weight: bold;
   width: 98%;
   border-radius: 5px;
+  overflow: scroll;
+  font-size: 4vw;
   }
 
 hr {
@@ -86,11 +88,6 @@ h2, h3 {
 	margin-bottom:.2em;
 	}
 
-
-
-
-
-
 /* Override default settings to my preference */
 body {
 	font-family:Raleway, sans-serif;
@@ -98,23 +95,16 @@ body {
 	margin: 0 10%;
 	}
 
-
-
 label, select, input{
   display: inline;
   padding: 10px;
   margin-bottom: 10px;
   }
 
-
-
-
 input[type="submit"]{
     background: linear-gradient(170deg,#D3D3D3 25%, #FFF 50%, #fff 75%, #d3d3d3 99%);
   }
 
-
-/* Footer */
 footer {
 	font-size: smaller;
 	text-align:center;
@@ -123,7 +113,6 @@ footer {
 footer p {
 	padding: 1em;
 	}
-
 
 /***************************************** Progressive enhancements  *****************************************/
 
