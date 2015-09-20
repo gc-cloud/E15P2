@@ -37,14 +37,6 @@
         </div>
         <div class="row">
           <div class="col-sm-2">
-            <input type="checkbox" name="camelCase" <?php if($camelCase=="true") echo 'value="true" checked'; ?>  />
-          </div>
-          <div class="col-sm-6">
-            <label>Use CamelCase</label>
-          </div>
-        </div> <!-- end row -->
-        <div class="row">
-          <div class="col-sm-2">
             <select name='numberCount' id='numberCount'>
               <option <?php if($numberCount=="0") echo 'selected="selected"'; ?> value="0">0</option>
               <option <?php if($numberCount=="1") echo 'selected="selected"'; ?> value="1">1</option>
@@ -75,6 +67,14 @@
             <label for='specialCharacterCount'># of Special Characters</label>
           </div>
         </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <input type="checkbox" name="camelCase" <?php if($camelCase=="true") echo 'value="true" checked'; ?>  />
+          </div>
+          <div class="col-sm-6">
+            <label>Use CamelCase</label>
+          </div>
+        </div> 
         <div class="row">
           <div class="col-sm-12">
             <input type='submit' class='btn btn-default' value='New Password'>

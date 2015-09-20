@@ -20,8 +20,6 @@ fields in the submitting forms*/
   isset($_POST['specialCharacterCount'])? $specialCharacterCount = $_POST['specialCharacterCount']:$specialCharacterCount= 1;
   !isset($_POST['camelCase'])? $camelCase="false":$camelCase="true";
 
-/* Function Definitions*/
-/*---------------------*/
 
 /* Create a generic function to select random elements form a source
 (for example: specialCharacters,numbers,wordCorpus) and then add the
@@ -39,7 +37,7 @@ function addElements ($source, &$destination, $count, $camelCase){
     } else {
       /* If elements <> 0,1 then we have an array of results */
       foreach ($randomKeys as $randomKey) {
-          ($camelCase=="true")?  $destination[] = ucfirst($source[$randomKey]) :$destination[] = $source[$randomKey];
+        ($camelCase=="true")?  $destination[] = ucfirst($source[$randomKey]) :$destination[] = $source[$randomKey];
        }
     }
 }
