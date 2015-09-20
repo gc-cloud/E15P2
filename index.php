@@ -17,7 +17,7 @@
       <div class="jumbotron">
       <form action="index.php" method="post" >
         <div class="row">
-            <h3> Select Password Requirements</h3>
+            <h2> Select Password Requirements</h2>
         </div>
 
         <div class="row">
@@ -39,11 +39,15 @@
 
         <div class="row">
           <div class="col-sm-2">
-            <!--input type="checkbox" name="camelCase" <?php if($camelCase) {echo ' value="true" checked ';} else {echo 'value="false"';} ?>-->
-            <select name='camelCase' id='camelCase'>
+            <!--select name='camelCase' id='camelCase'>
               <option <?php if($camelCase=="false") echo 'selected="selected"'; ?> value="false">N</option>
               <option <?php if($camelCase=="true") echo 'selected="selected"'; ?> value="true">Y</option>
-            </select>
+            </select-->
+<!--
+                  No <input type="radio" name="camelCase" value="false" id="noCamel"<?php if($camelCase=="false") echo 'checked'; ?> />
+                  Yes <input type="radio" name="camelCase" value="true" id="yesCamel" <?php if($camelCase=="true") echo 'checked'; ?>  />
+-->
+                  <input type="checkbox" name="camelCase" <?php if($camelCase=="true") echo 'value="true" checked'; ?>  />
 
           </div>
           <div class="col-sm-6">
@@ -52,6 +56,7 @@
         </div> <!-- end row -->
 
         <div class="row">
+
           <div class="col-sm-2">
             <select name='numberCount' id='numberCount'>
               <option <?php if($numberCount=="0") echo 'selected="selected"'; ?> value="0">0</option>
@@ -66,6 +71,7 @@
           <div class="col-sm-6">
             <label for='numberCount'># of Numbers</label>
           </div>
+
         </div>
 
         <div class="row">

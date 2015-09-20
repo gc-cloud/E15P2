@@ -18,7 +18,7 @@ fields in the submitting forms*/
   isset($_POST['wordCount'])? $wordCount = $_POST['wordCount']:$wordCount= 4;
   isset($_POST['numberCount'])? $numberCount = $_POST['numberCount']:$numberCount= 1;
   isset($_POST['specialCharacterCount'])? $specialCharacterCount = $_POST['specialCharacterCount']:$specialCharacterCount= 1;
-  isset($_POST['camelCase'])? $camelCase=$_POST['camelCase']:$camelCase="true";
+  !isset($_POST['camelCase'])? $camelCase="false":$camelCase="true";
 
 /* Function Definitions*/
 /*---------------------*/
