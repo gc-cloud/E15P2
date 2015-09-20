@@ -12,23 +12,22 @@ cracked using a brute force attack.
 Please visit [p2.zudbu.com](http://p2.zudbu.com).  This domain is dedicated (currently) to my CSCIE15 work.
 
 ### Demo location
-Password generator a [video https://youtu.be/sJJcIBwy07A](https://youtu.be/sJJcIBwy07A) in youtube.
+Password generator [video https://youtu.be/sJJcIBwy07A](https://youtu.be/sJJcIBwy07A) in youtube.
 
 ### Extra Challenges
 I decided to take on some of the extra challenges.
-- Using PHP includes,
+- Using PHP includes
+- Added extra feature for CamelCase
 - Implemented styling using bootstrap
 - Made sure site displays nicely on different screen sizes (tested with iPhones and desktops)
-- Added functionality to select CamelCase
 
 
 ### Site organization
-I decided to take on some of the extra challenges. Specifically, I am using PHP includes,
-and implemented styling using bootstrap. From a PHP standpoint, the solution uses several
-includes for html structure (head, header, footer, data), one incldue for the data structures (lists of words,
-special characters, etc), and one include for the server side functions.  
+  - The site is organized in folders to keep css, images, php includes and java script separated
   - The main content is on index.php.  Head, Header and Footer content is obtained from calls to
    head.php, header.php and footer.php
+  - data.php defines valid values
+  - generatePassword.php contains the main logic to generate the password
   - The layout is mobile-first and responsive. To do this, I am using [bootstrap](http://getbootstrap.com).
   Specific CSS for this site are defined on zudbu.css
   - We are obtaining the Raleway font from [Google fonts](https://www.google.com/fonts)
@@ -49,11 +48,9 @@ using PHP's shuffle() function.
 the screen.
 
 ## Sources
-- All the source data for words, numbers and special characters is kept in pre-defined
-arrays included in data.php.  
-- Selection of numbers was straightforward.
-- Selection of special characters was based on the layout of my keyboard.  To note, the
+- Selection of valid numbers was straightforward.
+- Selection of valid special characters was based on the layout of my keyboard.  To note, the
 array contains the html escape sequences instead of the charactes themselves. Codes
 were obtained from [theasciicode.com](http://www.theasciicode.com.ar/ascii-control-characters/escape-ascii-code-27.html)
-- The list of common english words is based on content from gravityMmonkey
+- The list of common english words is based on content from gravityMonkey
 [github](https://gist.github.com/gravitymonkey/2406023)
