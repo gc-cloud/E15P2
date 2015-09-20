@@ -5,7 +5,7 @@
   These are: special characters, numbers and words. These data structures are
   accessed by the file functions.php */
   /*$specialCharacters = array("!","@","#","$","%","&","*","_","+",".");*/
-  $specialCharacters = array("&#33;","&#35;","&#36;","&#37;","&#38;","&#42;","&#43;","&#46","&#64;","&#95;");
+  $specialCharacters = array("&#33;","&#35;","&#36;","&#37;","&#38;","&#42;","&#43;","&#46;","&#64;","&#95;");
 
   $numbers = array("0","1","2","3","4","5","6","7","8","9");
   $wordCorpus = array("hello", "world", "this", "is", "random","stuff",
