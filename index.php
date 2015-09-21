@@ -6,7 +6,7 @@
   <body>
     <?php include("includes/header.php"); ?>
     <?php include("includes/generatePassword.php");?>
-    <div class="container-fluid" title="Dynamic Web Apps Portfolio"> <!-- Start Main container -->
+    <div class="container-fluid, mainContent" title="Dynamic Web Apps Portfolio"> <!-- Start Main container -->
 
       <div class="jumbotron">
           <h2>Generate a hard-to-crack password that you can remember!</h2>
