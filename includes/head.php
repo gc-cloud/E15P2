@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="Zudbu: a healthy mind, body and spirit for all." name="Zudbu">
+<meta content="Zudbu" name="Zudbu">
 <meta name="robots" content="noodp">
 <title id="pageName">Zudbu</title>
 

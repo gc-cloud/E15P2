@@ -6,7 +6,7 @@
 for special characters, numbers and words to be used for password generation.
 The include call assummes that data structures are on the same folder as this
 file  */
-  include("data.php");
+  require("data.php");
 
 /* Initialize password array.  This array will hold the values selected for special
 characters, numbers and words*/
@@ -28,12 +28,11 @@ each element start with an uppercase.  Finally, this function handles
 the special cases of 1 element (not an array) and 0 elements (ignore)*/
 
 function addElements ($source, &$destination, $count, $camelCase){
+    if ($count==0) return; /* if no elements we do nothing */
     $randomKeys  = array_rand($source, $count);
     if (count($randomKeys) == 1){
       /* If only one element, array_rand returns an integer, not an array */
       ($camelCase=="true")? $destination[] = ucfirst($source[$randomKeys]) : $destination[] = $source[$randomKeys];
-    } elseif (count($randomKeys) == 0){
-      /* If no elements, we do nothing */
     } else {
       /* If elements <> 0,1 then we have an array of results */
       foreach ($randomKeys as $randomKey) {

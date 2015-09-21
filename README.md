@@ -52,5 +52,4 @@ the screen.
 - Selection of valid special characters was based on the layout of my keyboard.  To note, the
 array contains the html escape sequences instead of the charactes themselves. Codes
 were obtained from [theasciicode.com](http://www.theasciicode.com.ar/ascii-control-characters/escape-ascii-code-27.html)
-- The list of common english words is based on content from gravityMonkey
-[github](https://gist.github.com/gravitymonkey/2406023)
+- The list of common english words is based on content from [http://www.rupert.id.au/resources/1000-words.php](http://www.rupert.id.au/resources/1000-words.php)

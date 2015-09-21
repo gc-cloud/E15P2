@@ -5,7 +5,7 @@
   </head>
   <body>
     <?php include("includes/header.php"); ?>
-    <?php include("includes/generatePassword.php");?>
+    <?php require("includes/generatePassword.php");?>
     <div class="container-fluid, mainContent" title="Dynamic Web Apps Portfolio"> <!-- Start Main container -->
 
       <div class="jumbotron">
